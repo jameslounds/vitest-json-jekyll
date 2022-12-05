@@ -28,7 +28,7 @@ layout: default
             <path role="button" d="M 8 8 l -6 -6 M 8 2 l -6 6" fill="none" stroke="#ca3d16"/>
           </svg>
         {% endif %}
-        {{ testGroup.name | regex_replace: '.*(?:apps|packages)\/', '' }}
+        {{ testGroup.name | regex_replace: '.*(apps|packages)[/]', '' }}
         <span class="duration">({{ testGroup.endTime | minus : testGroup.startTime }} ms)</span>
       </label>
       <div>
