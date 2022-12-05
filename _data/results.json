@@ -1,0 +1,183 @@
+{
+  "numTotalTestSuites": 12,
+  "numPassedTestSuites": 12,
+  "numFailedTestSuites": 0,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 16,
+  "numPassedTests": 15,
+  "numFailedTests": 1,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "startTime": 1670252883691,
+  "success": false,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["", "not logged in"],
+          "fullName": " not logged in redirects to login page",
+          "status": "passed",
+          "title": "redirects to login page",
+          "duration": 2,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": ["", "logged in", "active subscription"],
+          "fullName": " logged in active subscription loads the page",
+          "status": "passed",
+          "title": "loads the page",
+          "duration": 0,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": ["", "logged in", "no subscription"],
+          "fullName": " logged in no subscription redirects to /login",
+          "status": "passed",
+          "title": "redirects to /login",
+          "duration": 0,
+          "failureMessages": []
+        }
+      ],
+      "startTime": 1670252884742,
+      "endTime": 1670252884745,
+      "status": "passed",
+      "message": "",
+      "name": "/Users/james/Documents/Coding/building-control-calc/apps/u-value/src/routes/calc/layout.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["", "page"],
+          "fullName": " page Sends a login url",
+          "status": "passed",
+          "title": "Sends a login url",
+          "duration": 9,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": ["", "page"],
+          "fullName": " page Sends data correctly from the parent",
+          "status": "passed",
+          "title": "Sends data correctly from the parent",
+          "duration": 1,
+          "failureMessages": []
+        }
+      ],
+      "startTime": 1670252885902,
+      "endTime": 1670252885912,
+      "status": "passed",
+      "message": "",
+      "name": "/Users/james/Documents/Coding/building-control-calc/apps/u-value/src/routes/login/page.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["", "correct data returned"],
+          "fullName": " correct data returned returns {} on fresh visit",
+          "status": "failed",
+          "title": "returns {} on fresh visit",
+          "duration": 6,
+          "failureMessages": ["expected {} to not strictly equal {}"],
+          "location": {
+            "line": 21,
+            "column": 41
+          }
+        },
+        {
+          "ancestorTitles": ["", "correct data returned"],
+          "fullName": " correct data returned Returns a message from searchParams",
+          "status": "passed",
+          "title": "Returns a message from searchParams",
+          "duration": 0,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": ["", "correct data returned"],
+          "fullName": " correct data returned Returns a error from searchParams",
+          "status": "passed",
+          "title": "Returns a error from searchParams",
+          "duration": 1,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": ["", "correct data returned"],
+          "fullName": " correct data returned organisation = {} when the user has no org",
+          "status": "passed",
+          "title": "organisation = {} when the user has no org",
+          "duration": 0,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": ["", "correct data returned"],
+          "fullName": " correct data returned Finds the user's organisation from jwt",
+          "status": "passed",
+          "title": "Finds the user's organisation from jwt",
+          "duration": 0,
+          "failureMessages": []
+        }
+      ],
+      "startTime": 1670252885908,
+      "endTime": 1670252885915,
+      "status": "failed",
+      "message": "",
+      "name": "/Users/james/Documents/Coding/building-control-calc/apps/u-value/src/routes/layout.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["", "data"],
+          "fullName": " data redirects when not logged in",
+          "status": "passed",
+          "title": "redirects when not logged in",
+          "duration": 1,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": ["", "data"],
+          "fullName": " data throws an error when an employee tries to load the page",
+          "status": "passed",
+          "title": "throws an error when an employee tries to load the page",
+          "duration": 1,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": ["", "data"],
+          "fullName": " data loads for a logged in, no org user",
+          "status": "passed",
+          "title": "loads for a logged in, no org user",
+          "duration": 1,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": ["", "data"],
+          "fullName": " data loads for a user without a plan",
+          "status": "passed",
+          "title": "loads for a user without a plan",
+          "duration": 0,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": ["", "data"],
+          "fullName": " data loads for a user with an existing plan",
+          "status": "passed",
+          "title": "loads for a user with an existing plan",
+          "duration": 0,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": ["", "Page"],
+          "fullName": " Page mounts",
+          "status": "passed",
+          "title": "mounts",
+          "duration": 5,
+          "failureMessages": []
+        }
+      ],
+      "startTime": 1670252886118,
+      "endTime": 1670252886126,
+      "status": "passed",
+      "message": "",
+      "name": "/Users/james/Documents/Coding/building-control-calc/apps/u-value/src/routes/subscribe/layout.test.ts"
+    }
+  ]
+}
