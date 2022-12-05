@@ -5,6 +5,7 @@
   display: none;
 }
 
+$bg: #21252b;
 $black: #282c34;
 $white: #abb2bf;
 $light-red: #e06c75;
@@ -21,11 +22,16 @@ $comment-grey: #5c6370;
 @import "{{ site.theme }}";
 
 body {
-  background-color: $black;
+  background-color: $bg;
   padding: 50px;
   font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #727272;
+  color: $white;
   font-weight: 400;
+}
+// only code blocks are for trace errors
+code {
+  color: $gutter-grey;
+  background-color: $light-red;
 }
 
 h1,
