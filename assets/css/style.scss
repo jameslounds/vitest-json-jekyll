@@ -29,7 +29,7 @@ body {
   font-weight: 400;
 }
 // only code blocks are for trace errors
-code {
+.markdown-body code {
   color: $gutter-grey;
   background-color: $light-red;
 }
