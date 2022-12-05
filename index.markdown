@@ -28,7 +28,7 @@ layout: default
             <path role="button" d="M 8 8 l -6 -6 M 8 2 l -6 6" fill="none" stroke="#ca3d16"/>
           </svg>
         {% endif %}
-        {{ testGroup.name | prune_filename }}
+        {{ testGroup.name | regex_replace: '.*(?:apps|packages)\/', '' }}
         <span class="duration">({{ testGroup.endTime | minus : testGroup.startTime }} ms)</span>
       </label>
       <div>
@@ -45,7 +45,7 @@ layout: default
                     <path role="button" d="M 8 8 l -6 -6 M 8 2 l -6 6" fill="none" stroke="#ca3d16"/>
                   </svg>
                 {% endif %}
-                {{ test.ancestorTitles | jsonify  | pretty_name }} > {{ test.title }}
+                {{ test.ancestorTitles | join: " > "  | remove_first: " > " }} > {{ test.title }}
                 <span class="duration">({{ test.duration }} ms)</span>
               </label>
               {% if test.status == 'failed' %}

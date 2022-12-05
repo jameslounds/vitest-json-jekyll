@@ -21,3 +21,6 @@
 title: Vitest Report
 description: >- # this means to ignore newlines until "baseurl:"
   See your vitest results in the browser
+
+plugins:
+  - jekyll-regex-replace
